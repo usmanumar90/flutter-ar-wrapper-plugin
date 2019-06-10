@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e8fb260-58c3-4a61-9eb4-e9f03c4afd6c" name="Default Changelist" comment="" />
+    <list default="true" id="6e8fb260-58c3-4a61-9eb4-e9f03c4afd6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Call_Button.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Call_Button.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Call_Button.sfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Exit_Button.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Exit_Button.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Message_Button.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Message_Button.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/Message_Button.sfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/facebook_Button.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/facebook_Button.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Buttons/facebook_Button.sfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Frame/Border.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Frame/Border.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Frame/Border.sfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Frame/Plane withinborder.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Frame/Plane withinborder.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Frame/Plane.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/sampledata/Frame/Plane.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/assets/models/augmented_video_model.sfb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/assets/models/border.sfb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/assets/models/call_button.sfb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/assets/models/facebook_button.sfb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/src/main/assets/models/message_button.sfb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/sampledata/augmented_video_material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/android/sampledata/augmented_video_material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/sampledata/augmented_video_model.sfa" beforeDir="false" afterPath="$PROJECT_DIR$/android/sampledata/augmented_video_model.sfa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/ar.imgdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/emily.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/images/emily.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/emily_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/videos/emily_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/noah.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/images/noah.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/noah_video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/videos/noah_video.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/test_image_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/images/test_image_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/test_image_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/images/test_image_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/test_image_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/images/test_image_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/test_video_1.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/videos/test_video_1.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/test_video_2.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/videos/test_video_2.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/test_video_3.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/assets/videos/test_video_3.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/assets/we-make-app.sfb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArVideoFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArVideoFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/VideoAnchorNode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/VideoScaleType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/activity_ar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/res/layout/activity_ar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/view_hint_swipe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/view_visit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/view_wall.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/layout/view_web_image.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/raw/augmented_video_model.sfb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/raw/emily.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/raw/emily_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/raw/lego.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/raw/lego_video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/res/raw/swarm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
     <ignored path="$PROJECT_DIR$/.pub/" />
@@ -16,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="319">
               <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -28,52 +89,116 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/src/main/assets/images/emily.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/src/main/assets/images/test_image_2.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArVideoFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="222" column="35" lean-forward="true" selection-start-line="222" selection-start-column="35" selection-end-line="222" selection-end-column="35" />
+              <folding>
+                <element signature="e#44#792#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/src/main/assets/images/test_image_1.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/flutter_ar_plugin.dart" />
-        <option value="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArVideoFragment.kt" />
         <option value="$PROJECT_DIR$/example/pubspec.yaml" />
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
+        <option value="$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArVideoFragment.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="-46" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="flutter_ar_plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="flutter_ar_plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter-ar-wrapper-plugin-kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flutter_plugin" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Saira Nawaz\SmartMinds\AR\flutter-ar-wrapper-plugin-kotlin\android\src\main\res\raw" />
+      <recent name="G:\Saira Nawaz\SmartMinds\AR\flutter-ar-wrapper-plugin-kotlin\android\src\main\assets" />
       <recent name="G:\Saira Nawaz\SmartMinds\AR\FlutterARPlugin\flutter_ar_plugin\example\android\app\src\main\res\values" />
     </key>
   </component>
@@ -104,8 +229,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Captures" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -115,16 +241,16 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.24386252" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.23076923" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.9054463" visible="true" weight="0.08183306" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" />
       <window_info anchor="bottom" id="Terminal" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.09455371" side_tool="true" visible="true" weight="0.08183306" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3453355" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49924356" weight="0.3453355" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -134,26 +260,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArVideoFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="e#44#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#42#376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_ar_plugin.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -165,18 +271,12 @@
     <entry file="file://$PROJECT_DIR$/android/src/main/assets/noah.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/assets/emily.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/assets/images/background.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -185,12 +285,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/example/assets/images/background.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="319">
           <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/assets/images/test_image_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/assets/images/emily.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/assets/images/test_image_2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/smartminds/flutter_ar_plugin/ArVideoFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="222" column="35" lean-forward="true" selection-start-line="222" selection-start-column="35" selection-end-line="222" selection-end-column="35" />
+          <folding>
+            <element signature="e#44#792#0" expanded="true" />
           </folding>
         </state>
       </provider>

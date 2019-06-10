@@ -7,13 +7,14 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
+import com.shliama.augmentedvideotutorial.ArVideoFragment
 
 class ArActivity : AppCompatActivity() {
 
     private val openGlVersion by lazy {
         (getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager)
-            .deviceConfigurationInfo
-            .glEsVersion
+                .deviceConfigurationInfo
+                .glEsVersion
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,10 +25,10 @@ class ArActivity : AppCompatActivity() {
             supportFragmentManager.inTransaction { replace(R.id.fragmentContainer, ArVideoFragment()) }
         } else {
             AlertDialog.Builder(this)
-                .setTitle("Device is not supported")
-                .setMessage("OpenGL ES 3.0 or higher is required. The device is running OpenGL ES $openGlVersion.")
-                .setPositiveButton(android.R.string.ok) { _, _ -> finish() }
-                .show()
+                    .setTitle("Device is not supported")
+                    .setMessage("OpenGL ES 3.0 or higher is required. The device is running OpenGL ES $openGlVersion.")
+                    .setPositiveButton(android.R.string.ok) { _, _ -> finish() }
+                    .show()
         }
     }
 

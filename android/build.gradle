@@ -55,3 +55,25 @@ sceneform.asset('sampledata/augmented_video_model.obj',
         'sampledata/augmented_video_material.mat',
         'sampledata/augmented_video_model.sfa',
         'src/main/res/raw/augmented_video_model')
+
+
+
+sceneform.asset('sampledata/Frame/Border.obj',
+        'default',
+        'sampledata/Frame/Border.sfa',
+        'src/main/assets/Border')
+
+sceneform.asset('sampledata/Buttons/facebook_Button.obj',
+        'default',
+        'sampledata/Buttons/facebook_Button.sfa',
+        'src/main/assets/facebook_Button')
+
+sceneform.asset('sampledata/Buttons/Call_Button.obj',
+        'default',
+        'sampledata/Buttons/Call_Button.sfa',
+        'src/main/assets/Call_Button')
+
+sceneform.asset('sampledata/Buttons/Message_Button.obj',
+        'default',
+        'sampledata/Buttons/Message_Button.sfa',
+        'src/main/assets/Message_Button')
