@@ -64,7 +64,7 @@ open class ArVideoFragment : ArFragment() {
     override fun getSessionConfiguration(session: Session): Config {
 
         fun loadAugmentedImageBitmap(imageName: String): Bitmap =
-            requireContext().assets.open(imageName).use { return BitmapFactory.decodeStream(it) }
+                requireContext().assets.open(imageName).use { return BitmapFactory.decodeStream(it) }
 
         fun setupAugmentedImageDatabase(config: Config, session: Session): Boolean {
             try {
@@ -101,66 +101,66 @@ open class ArVideoFragment : ArFragment() {
         // Create a renderable with a material that has a parameter of type 'samplerExternal' so that
         // it can display an ExternalTexture.
         ModelRenderable.builder()
-            .setSource(requireContext(), Uri.parse("models/augmented_video_model.sfb"))
-            .build()
-            .thenAccept { renderable ->
-                videoRenderable = renderable
-                renderable.isShadowCaster = false
-                renderable.isShadowReceiver = false
-                renderable.material.setExternalTexture("videoTexture", externalTexture)
-            }
-            .exceptionally { throwable ->
-                Log.e(TAG, "Could not create ModelRenderable", throwable)
-                return@exceptionally null
-            }
+                .setSource(requireContext(), Uri.parse("models/augmented_video_model.sfb"))
+                .build()
+                .thenAccept { renderable ->
+                    videoRenderable = renderable
+                    renderable.isShadowCaster = false
+                    renderable.isShadowReceiver = false
+                    renderable.material.setExternalTexture("videoTexture", externalTexture)
+                }
+                .exceptionally { throwable ->
+                    Log.e(TAG, "Could not create ModelRenderable", throwable)
+                    return@exceptionally null
+                }
 
         ModelRenderable.builder()
-            .setSource(requireContext(), Uri.parse("models/border.sfb"))
-            .build()
-            .thenAccept { renderable ->
-                borderRenderable = renderable
+                .setSource(requireContext(), Uri.parse("models/border.sfb"))
+                .build()
+                .thenAccept { renderable ->
+                    borderRenderable = renderable
 
-            }
-            .exceptionally { throwable ->
-                Log.e(TAG, "Could not create ModelRenderable", throwable)
-                return@exceptionally null
-            }
-
-        ModelRenderable.builder()
-            .setSource(requireContext(), Uri.parse("models/facebook_button.sfb"))
-            .build()
-            .thenAccept { renderable ->
-                facebookRenderable = renderable
-
-            }
-            .exceptionally { throwable ->
-                Log.e(TAG, "Could not create ModelRenderable", throwable)
-                return@exceptionally null
-            }
+                }
+                .exceptionally { throwable ->
+                    Log.e(TAG, "Could not create ModelRenderable", throwable)
+                    return@exceptionally null
+                }
 
         ModelRenderable.builder()
-            .setSource(requireContext(), Uri.parse("models/call_button.sfb"))
-            .build()
-            .thenAccept { renderable ->
-                callRenderable = renderable
+                .setSource(requireContext(), Uri.parse("models/facebook_button.sfb"))
+                .build()
+                .thenAccept { renderable ->
+                    facebookRenderable = renderable
 
-            }
-            .exceptionally { throwable ->
-                Log.e(TAG, "Could not create ModelRenderable", throwable)
-                return@exceptionally null
-            }
+                }
+                .exceptionally { throwable ->
+                    Log.e(TAG, "Could not create ModelRenderable", throwable)
+                    return@exceptionally null
+                }
 
         ModelRenderable.builder()
-            .setSource(requireContext(), Uri.parse("models/message_button.sfb"))
-            .build()
-            .thenAccept { renderable ->
-                messageRenderable = renderable
+                .setSource(requireContext(), Uri.parse("models/call_button.sfb"))
+                .build()
+                .thenAccept { renderable ->
+                    callRenderable = renderable
 
-            }
-            .exceptionally { throwable ->
-                Log.e(TAG, "Could not create ModelRenderable", throwable)
-                return@exceptionally null
-            }
+                }
+                .exceptionally { throwable ->
+                    Log.e(TAG, "Could not create ModelRenderable", throwable)
+                    return@exceptionally null
+                }
+
+        ModelRenderable.builder()
+                .setSource(requireContext(), Uri.parse("models/message_button.sfb"))
+                .build()
+                .thenAccept { renderable ->
+                    messageRenderable = renderable
+
+                }
+                .exceptionally { throwable ->
+                    Log.e(TAG, "Could not create ModelRenderable", throwable)
+                    return@exceptionally null
+                }
 
         videoAnchorNode = AnchorNode().apply {
             setParent(arSceneView.scene)
@@ -190,10 +190,20 @@ open class ArVideoFragment : ArFragment() {
 
         val updatedAugmentedImages = frame.getUpdatedTrackables(AugmentedImage::class.java)
         for (augmentedImage in updatedAugmentedImages) {
-            if (activeAugmentedImage != augmentedImage && augmentedImage.trackingState == TrackingState.TRACKING) {
+            if (activeAugmentedImage != augmentedImage && augmentedImage.trackingState == TrackingState.TRACKING && augmentedImage.trackingMethod == AugmentedImage.TrackingMethod.FULL_TRACKING) {
                 try {
+                    Log.d("Jatin", "In For loop")
                     dismissArVideo()
                     playbackArVideo(augmentedImage)
+                    break
+                } catch (e: Exception) {
+                    Log.e(TAG, "Could not play video [${augmentedImage.name}]", e)
+                }
+            }
+            if (activeAugmentedImage == augmentedImage && augmentedImage.trackingState == TrackingState.TRACKING && augmentedImage.trackingMethod != AugmentedImage.TrackingMethod.FULL_TRACKING) {
+                try {
+                    Log.d("Jatin", "In For loop: Not fully Tacking" + augmentedImage.trackingMethod)
+                    dismissArVideo()
                     break
                 } catch (e: Exception) {
                     Log.e(TAG, "Could not play video [${augmentedImage.name}]", e)
@@ -203,6 +213,7 @@ open class ArVideoFragment : ArFragment() {
     }
 
     private fun dismissArVideo() {
+        Log.d("Jatin", "In DismissAR Function")
         videoAnchorNode.anchor?.detach()
         videoAnchorNode.renderable = null
         border.anchor?.detach()
@@ -212,66 +223,67 @@ open class ArVideoFragment : ArFragment() {
     }
 
     private fun playbackArVideo(augmentedImage: AugmentedImage) {
-        Log.d(TAG, "playbackVideo = ${augmentedImage.name}")
+        Log.d("Jatin", "In CreateAR Function")
+        Log.d("Jatin", "Plying = ${augmentedImage.name}")
 
         requireContext().assets.openFd(augmentedImage.name)
-            .use { descriptor ->
-                mediaPlayer.setDataSource(descriptor)
-            }.also {
-                mediaPlayer.isLooping = false
-                mediaPlayer.prepare()
-                mediaPlayer.start()
-            }
+                .use { descriptor ->
+                    mediaPlayer.setDataSource(descriptor)
+                }.also {
+                    mediaPlayer.isLooping = true
+                    mediaPlayer.prepare()
+                    mediaPlayer.start()
+                }
 
 
         videoAnchorNode.anchor = augmentedImage.createAnchor(augmentedImage.centerPose)
         border.anchor = augmentedImage.createAnchor(augmentedImage.centerPose)
 
         videoAnchorNode.localScale = Vector3(
-            1.0f*augmentedImage.extentX, // width
-            1.0f,
-            1.0f*augmentedImage.extentZ
+                1.0f*augmentedImage.extentX, // width
+                1.0f,
+                1.0f*augmentedImage.extentZ
         ) // height
         videoAnchorNode.localPosition = Vector3(
-            0.0f*augmentedImage.extentX, // width
-            0.0f,
-            0.0f*augmentedImage.extentZ
+                0.0f*augmentedImage.extentX, // width
+                0.0f,
+                0.0f*augmentedImage.extentZ
         )
 
         border.localScale = Vector3(
-            1.95f*augmentedImage.extentX, // width
-            1.0f,
-            1.3f*augmentedImage.extentZ
+                1.95f*augmentedImage.extentX, // width
+                1.0f,
+                1.3f*augmentedImage.extentZ
         )
 
         border.localPosition = Vector3(
-            0.0f*augmentedImage.extentX, // width
-            0.0f,
-            0.0f*augmentedImage.extentZ
+                0.0f*augmentedImage.extentX, // width
+                0.0f,
+                0.0f*augmentedImage.extentZ
         )
         facebook.localScale = Vector3(
-            0.6f,0.1f,0.6f
+                0.6f,0.1f,0.6f
         )
 
         facebook.localPosition = Vector3(
-            0.325f, 0.0f, -0.2f
+                0.325f, 0.0f, -0.2f
         )
 
-       facebook.setOnTapListener { hitTestResult, motionEvent ->
-           val uri = Uri.parse("https://mail.google.com/mail")
-           val intent = Intent(Intent.ACTION_VIEW, uri)
-           context?.startActivity(intent)
-       }
+        facebook.setOnTapListener { hitTestResult, motionEvent ->
+            val uri = Uri.parse("https://mail.google.com/mail")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            context?.startActivity(intent)
+        }
 
 
 
 
         message.localScale = Vector3(
-            0.6f,0.1f,0.6f
+                0.6f,0.1f,0.6f
         )
 
         message.localPosition = Vector3(
-            0.325f, 0.0f, 0.0f
+                0.325f, 0.0f, 0.0f
         )
 
         message.setOnTapListener { hitTestResult, motionEvent ->
@@ -280,11 +292,11 @@ open class ArVideoFragment : ArFragment() {
             context?.startActivity(intent)
         }
         call.localScale = Vector3(
-            0.6f,0.1f,0.6f
+                0.6f,0.1f,0.6f
         )
 
         call.localPosition = Vector3(
-            0.325f , 0.0f, 0.2f
+                0.325f , 0.0f, 0.2f
         )
 
         call.setOnTapListener { hitTestResult, motionEvent ->
